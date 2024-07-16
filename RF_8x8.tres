@@ -1,0 +1,11 @@
+[gd_resource type="GlyphFont" load_steps=2 format=3 uid="uid://dryr56gd57iwr"]
+
+[ext_resource type="Texture2D" uid="uid://dkmirxdq8uj1a" path="res://RF_8x8.png" id="1_wq025"]
+
+[resource]
+font = ExtResource("1_wq025")
+glyph_width = 8
+glyph_height = 8
+columns = 32
+get_solid_glyph_index = 249
+glyph_size = Vector2i(8, 8)

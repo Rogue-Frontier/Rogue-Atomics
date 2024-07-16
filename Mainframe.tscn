@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckojig8tokbfy"]
+
+[ext_resource type="Script" path="res://Mainframe.gd" id="1_uporh"]
+[ext_resource type="GlyphFont" uid="uid://dryr56gd57iwr" path="res://RF_8x8.tres" id="2_2xelg"]
+[ext_resource type="GlyphFont" uid="uid://cokoqcx8dkle2" path="res://IBMCGA_6x8.tres" id="3_vsc2i"]
+
+[sub_resource type="Environment" id="Environment_3p85f"]
+background_mode = 1
+
+[node name="Mainframe" type="Node"]
+script = ExtResource("1_uporh")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3p85f")
+
+[node name="Main" type="GlyphSurface" parent="."]
+font = ExtResource("2_2xelg")
+grid_width = 150
+grid_height = 90
+grid_size = Vector2i(150, 90)
+
+[node name="Readout" type="GlyphSurface" parent="."]
+font = ExtResource("3_vsc2i")
+grid_width = 200
+grid_height = 90
+grid_size = Vector2i(200, 90)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+editor_draw_screen = false

@@ -1,0 +1,12 @@
+[gd_resource type="GlyphFont" load_steps=2 format=3 uid="uid://cokoqcx8dkle2"]
+
+[ext_resource type="Texture2D" uid="uid://ddq02w65jmq1b" path="res://IBMCGA+_6x8.png" id="1_hvomc"]
+
+[resource]
+font = ExtResource("1_hvomc")
+glyph_width = 6
+glyph_height = 8
+glyph_padding = 0
+columns = 32
+get_solid_glyph_index = 249
+glyph_size = Vector2i(6, 8)
