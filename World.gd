@@ -51,7 +51,10 @@ func update_present():
 func updateTick() -> Subticks:
 	busy = true
 	var s := Subticks.new(actors.keys().map(func(a):
-		return a.updateTick()
+		var act = a.updateTick() as Array[Callable]
+		if !act:
+			act = []
+		return act
 		),
 		self.update_present,
 		func():return)
